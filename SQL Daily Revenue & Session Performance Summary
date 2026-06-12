@@ -1,6 +1,6 @@
 
 
-DECLARE start_date DATE DEFAULT '2024-01-01';
+DECLARE start_date DATE DEFAULT '2026-01-01';
 DECLARE end_date DATE DEFAULT CURRENT_DATE();
 
 WITH base_events AS (
@@ -14,7 +14,7 @@ WITH base_events AS (
         loyalty_flag,
         order_id,
         revenue
-    FROM `project.dataset.analytics_events`
+    FROM `PROJECT1.DATASET1.TABLE1`
     WHERE event_date BETWEEN start_date AND end_date
 ),
 
