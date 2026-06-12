@@ -30,7 +30,7 @@ WITH base_events AS (
         express_checkout_flag,
         payment_method,
         campaign_name
-    FROM `project.dataset.analytics_events`
+    FROM `PROJECT1.DATASET1.TABLE1`
     WHERE event_date BETWEEN '2026-01-05' AND '2026-04-29'
 ),
 
